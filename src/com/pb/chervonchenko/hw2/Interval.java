@@ -18,10 +18,10 @@ public class Interval {
                 System.out.println("Число попадает в промежуток 15-35");
             }
             else if (x >35 && x <= 50) {
-                System.out.println("Число попадает в промежуток 35-50");
+                System.out.println("Число попадает в промежуток 36-50");
             }
             else if (x >50 && x <= 100) {
-                System.out.println("Число попадает в промежуток 50-100");
+                System.out.println("Число попадает в промежуток 51-100");
             }
 
             else {
