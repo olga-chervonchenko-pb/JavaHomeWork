@@ -5,43 +5,41 @@ import java.util.Scanner;
 public class Calculator {
 
     public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
         int operand1;
         int operand2;
-        int otvet;
-        char itog;
+        String sign;
 
-        Scanner result = new Scanner(System.in);
         System.out.print("Введите 1ю переменную: ");
-        operand1 = result.nextInt();
+        operand1 = scan.nextInt();
+
         System.out.print("Введите 2ю переменную: ");
-        operand2 = result.nextInt();
-        System.out.print("Введите знак операции (+, -, *, /): ");
-        itog = result.next().charAt(0);
+        operand2 = scan.nextInt();
 
-        switch (itog) {
-            case '+':
-                otvet = operand1 + operand2;
+        System.out.print("Введите знак операции(+ - * /): ");
+        sign = scan.next();
+
+        switch (sign) {
+            case "+":
+                System.out.println((operand1 + operand2));
                 break;
-            case '-':
-                otvet = operand1 - operand2;
+            case "-":
+                System.out.println((operand1 - operand2));
                 break;
-            case '*':
-                otvet = operand1 * operand2;
+            case "*":
+                System.out.println((operand1 * operand2));
                 break;
-            case '/':
+            case "/":
                 if (operand2 == 0) {
-                    System.out.println("На 0 делить нельзя!!!");
+                    System.out.println("НА 0 ДЕЛИТЬ НЕЛЬЗЯ!!!");
                 }
-                otvet = operand1 / operand2;
+                System.out.println((operand1 / operand2));
                 break;
-            default:
-                System.out.print("Вы ввели неверный арифмитический знак");
-                return;
+
+            default: {
+                System.out.println("Вы ввели неверный знак операции");
+            }
         }
-
-            System.out.print("Ответ:");
-            System.out.print(operand1 + " " + itog + " " + operand2 + " = " + otvet);
-        }
-
-
+    }
 }
