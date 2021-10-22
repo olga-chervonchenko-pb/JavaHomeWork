@@ -11,9 +11,14 @@ public class Interval {
             System.out.print("Введите число: ");
             x = result.nextInt();
 
-            if (x <=14) {
+            if (x < 0) {
+                System.out.println("Число отрицательное, не подходит");
+            }
+
+            else if (x >=0 && x <= 14) {
                 System.out.println("Число попадает в промежуток 0-14");
             }
+
             else if (x >14 && x <= 35) {
                 System.out.println("Число попадает в промежуток 15-35");
             }
@@ -24,8 +29,11 @@ public class Interval {
                 System.out.println("Число попадает в промежуток 51-100");
             }
 
+
             else {
                 System.out.println("Число не попадает в нужные промежутки");
             }
+
+
         }
 }
