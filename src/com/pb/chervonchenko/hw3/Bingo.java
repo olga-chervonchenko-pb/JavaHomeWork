@@ -15,7 +15,7 @@ public class Bingo {
         int y;
         int count = 1;
 
-        System.out.println("Угадайте число в диапозоне с 0 до 100. Проверьте свою удачу! ");
+        System.out.println("Угадайте число в диапазоне с 0 до 100. Проверьте свою удачу! ");
         System.out.print("Введите число ==> ");
         y = scan.nextInt();
 
