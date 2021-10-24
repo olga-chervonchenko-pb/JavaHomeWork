@@ -16,6 +16,7 @@ public class Bingo {
         int count = 1;
 
         System.out.println("Угадайте число в диапазоне с 0 до 100. Проверьте свою удачу! ");
+        System.out.println("Если захотите закончить игру, введите число 200. ");
         System.out.print("Введите число ==> ");
         y = scan.nextInt();
 
@@ -24,13 +25,20 @@ public class Bingo {
             count++;
             if (y > x) {
                 System.out.println("Попробуйте еще раз свою удачу,загаданное число меньше введенного" + ":");
-            } else if (y < x)
+            }
+            if (y < x)
                 System.out.println("Попробуйте еще раз свою удачу,загаданное число больше введенного" + ":");
             y = scan.nextInt();
 
+            if (y == 200) {
+                System.out.println("Вы завершаете игру.До свидания!");
+                break;
+            }
         }
-        System.out.println("Поздравляем, Вы угадали c " + count+ " попыток");
 
+        if (y == x) {
+            System.out.println("Поздравляем, Вы угадали c " + count + " попыток");
+        }
         System.out.println("Конец игры!");
 
     }
