@@ -29,7 +29,6 @@ public class Library {
                 book3.getName(),book3.getAutor(),book3.getYear());
 
 
-        //System.out.println(book1.getName(),book1.getAutor(),book1.getYear());
         book1.bookInfo1(book1.getName(), book1.getAutor(), book1.getYear());
         book2.bookInfo2(book2.getName(), book2.getAutor(), book2.getYear());
         book3.bookInfo3(book3.getName(), book3.getAutor(), book3.getYear());
