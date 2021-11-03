@@ -16,27 +16,21 @@ public class Library {
         Reader[] readers = new Reader[] {reader1, reader2, reader3};
 
 
-
-
         reader1.takeBook(book1.getName(),book2.getName(),book3.getName());
-        reader1.takeBook(book1.getName(),book1.getAutor(), book1.getYear(),
-                book2.getName(),book2.getAutor(),book2.getYear(),
-                book3.getName(),book3.getAutor(),book3.getYear());
+        reader1.takeBook(book1,book2,book3);
+
 
         reader1.returnBook(book1.getName(),book2.getName(),book3.getName());
-        reader1.returnBook(book1.getName(),book1.getAutor(), book1.getYear(),
-                book2.getName(),book2.getAutor(),book2.getYear(),
-                book3.getName(),book3.getAutor(),book3.getYear());
+        reader1.returnBook(book1,book2,book3);
 
 
-        book1.bookInfo1(book1.getName(), book1.getAutor(), book1.getYear());
-        book2.bookInfo2(book2.getName(), book2.getAutor(), book2.getYear());
-        book3.bookInfo3(book3.getName(), book3.getAutor(), book3.getYear());
+        book1.bookInfo1(book1);
+        book2.bookInfo2(book2);
+        book3.bookInfo3(book3);
 
-        reader1.readerInfo1(reader1.getFio(), reader1.getNumber(),reader1.getDepartment(), reader1.getBirthday(), reader1.getPhone());
-        reader2.readerInfo2(reader2.getFio(), reader2.getNumber(),reader2.getDepartment(), reader2.getBirthday(), reader2.getPhone());
-        reader3.readerInfo3(reader1.getFio(), reader3.getNumber(),reader3.getDepartment(), reader3.getBirthday(), reader3.getPhone());
-
+        reader1.readerInfo1(reader1);
+        reader2.readerInfo2(reader2);
+        reader3.readerInfo3(reader3);
 
 
 

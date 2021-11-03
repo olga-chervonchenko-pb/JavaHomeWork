@@ -36,16 +36,16 @@ public class Book {
         return year;
     }
 
-    public void bookInfo1(String name, String autor, String year) {
-            System.out.println("Книга1:" + name + "," +autor+ "," + year +".");
+    public void bookInfo1(Book book1) {
+            System.out.println("Книга1:" + book1.getName() + "," +autor+ "," + year +".");
         }
 
-    public void bookInfo2(String name, String autor, String year) {
-        System.out.println("Книга2:" + name + "," +autor+ "," + year +".");
+    public void bookInfo2(Book book2) {
+        System.out.println("Книга2:" + book2.getName() + "," +autor+ "," + year +".");
     }
 
-    public void bookInfo3(String name, String autor, String year) {
-        System.out.println("Книга3:" + name + "," +autor+ "," + year +".");
+    public void bookInfo3(Book book3) {
+        System.out.println("Книга3:" + book3.getName() + "," +autor+ "," + year +".");
     }
 
-    }
+}

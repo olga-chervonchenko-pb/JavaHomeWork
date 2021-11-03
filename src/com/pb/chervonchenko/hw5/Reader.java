@@ -1,5 +1,7 @@
 package com.pb.chervonchenko.hw5;
 
+import java.util.Arrays;
+
 public class Reader {
 
     private String fio;
@@ -78,6 +80,14 @@ public class Reader {
         System.out.println("\b");
     }
 
+    public void takeBook(Book ...books) {
+        System.out.print("ZZ" +fio + " взяв книги:");
+        for (Book book : books) {
+            System.out.println(book.getName()+ "(" +book.getAutor()+ "," +book.getYear()+ ")");
+        }
+        System.out.println("\b");
+    }
+
     public void returnBook(int bookCount) {
         System.out.println(fio + "вернул" + bookCount + "книги.");
     }
@@ -91,16 +101,23 @@ public class Reader {
         System.out.println("\b");
     }
 
-    public void readerInfo1(String fio, int number, String department, String birthday, String phone) {
-        System.out.println("Читатель 1:" + fio + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
+    public void returnBook(Book ...books) {
+        System.out.print("ZZ" +fio + " вернул книги:");
+        for (Book book : books) {
+            System.out.println(book.getName()+ "(" +book.getAutor()+ "," +book.getYear()+ ")");
+        }
+        System.out.println("\b");
     }
 
-    public void readerInfo2(String fio, int number, String department, String birthday, String phone) {
-        System.out.println("Читатель 2:" + fio + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
-    }
 
-    public void readerInfo3(String fio, int number, String department, String birthday, String phone) {
-        System.out.println("Читатель 3:" + fio + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
+    public void readerInfo1(Reader reader1) {
+        System.out.println("Читатель 1:" + reader1.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
+    }
+    public void readerInfo2(Reader reader2) {
+        System.out.println("Читатель 2:" + reader2.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
+    }
+    public void readerInfo3(Reader reader3) {
+        System.out.println("Читатель 3:" + reader3.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
     }
 
 }
