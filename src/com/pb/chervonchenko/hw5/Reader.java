@@ -81,7 +81,7 @@ public class Reader {
     }
 
     public void takeBook(Book ...books) {
-        System.out.print("ZZ" +fio + " взяв книги:");
+        System.out.print(fio + " взяв книги:");
         for (Book book : books) {
             System.out.println(book.getName()+ "(" +book.getAutor()+ "," +book.getYear()+ ")");
         }
@@ -102,7 +102,7 @@ public class Reader {
     }
 
     public void returnBook(Book ...books) {
-        System.out.print("ZZ" +fio + " вернул книги:");
+        System.out.print(fio + " вернул книги:");
         for (Book book : books) {
             System.out.println(book.getName()+ "(" +book.getAutor()+ "," +book.getYear()+ ")");
         }
