@@ -109,15 +109,10 @@ public class Reader {
         System.out.println("\b");
     }
 
+    public void readerInfo() {
+        System.out.println("Текущий читатель:" + getFio() + "," +number+ ","
+                + department +","  +birthday+ "," + phone +".");
 
-    public void readerInfo1(Reader reader1) {
-        System.out.println("Читатель 1:" + reader1.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
-    }
-    public void readerInfo2(Reader reader2) {
-        System.out.println("Читатель 2:" + reader2.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
-    }
-    public void readerInfo3(Reader reader3) {
-        System.out.println("Читатель 3:" + reader3.getFio() + "," +number+ "," + department +"," + birthday + "," +phone+ ".");
     }
 
 }
